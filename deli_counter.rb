@@ -6,7 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     counter = 1
-    safe_deli.map do |person|
+    safe_deli.each do |person|
       safe_deli[counter - 1] = "#{counter}. #{person}"
       counter += 1
     end
